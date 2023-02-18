@@ -91,9 +91,11 @@ export class Home extends Component {
     
     // handle for task complete
     const handleTaskComplete = (id) => {
+        // update the database to edit the status of the task
         axios.patch(`http://localhost:5050/tasks/${id}`, {
             status: "completed"
         }).then((res) => {
+            // set the tasks state value with edited data & sort the data by id with descending order
             this.setState((prevState) => ({
                 ...prevState,
                 tasks: [...prevState.tasks.filter(task => task.id!== id), res.data].sort((a, b) => b.id - a.id)
@@ -102,9 +104,11 @@ export class Home extends Component {
     }
     // handle for task cancel
     const handleTaskCancel = (id) => {
+        // update the database to edit the status of the task
         axios.patch(`http://localhost:5050/tasks/${id}`, {
             status: "canceled"
         }).then((res) => {
+            // set the tasks state value with edited data & sort the data by id with descending order
             this.setState((prevState) => ({
                 ...prevState,
                 tasks: [...prevState.tasks.filter(task => task.id!== id), res.data].sort((a, b) => b.id - a.id)
@@ -113,9 +117,11 @@ export class Home extends Component {
     }
     // handle for task pending
     const handleTaskPending = (id) => {
+        // update the database to edit the status of the task
         axios.patch(`http://localhost:5050/tasks/${id}`, {
             status: "pending"
         }).then((res) => {
+            // set the tasks state value with edited data & sort the data by id with descending order
             this.setState((prevState) => ({
                 ...prevState,
                 tasks: [...prevState.tasks.filter(task => task.id !== id), res.data].sort((a, b) => b.id - a.id)
@@ -128,7 +134,7 @@ export class Home extends Component {
 
     // function for task showing loops
     const tasksShow = (status) => {
-        return tasks.filter(data => data.status === status)
+        return tasks.filter(data => data.status === status) // filter the data by status
     }
 
 

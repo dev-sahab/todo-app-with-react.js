@@ -7,17 +7,17 @@
     },
     {
       "subject": "Go To Sleep",
-      "status": "canceled",
+      "status": "completed",
       "id": 2
     },
     {
       "subject": "Practice MERN Stack",
-      "status": "completed",
+      "status": "pending",
       "id": 3
     },
     {
       "subject": "Regular Excercise",
-      "status": "canceled",
+      "status": "completed",
       "id": 4
     }
   ]
