@@ -1,0 +1,25 @@
+.pending, .canceled, .completed {
+    background-color: #c9b945;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.canceled{
+    background-color: #cf2b02;
+    color: #fff;
+}
+.completed{
+    background-color: #28b81b;
+    color: #fff;
+}
+.noData {
+    background-color: #a8a8a8;
+    padding: 13px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}

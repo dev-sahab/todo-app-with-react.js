@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "subject": "Go to Gym",
+      "status": "pending",
+      "id": 1
+    },
+    {
+      "subject": "Go To Sleep",
+      "status": "canceled",
+      "id": 2
+    },
+    {
+      "subject": "Practice MERN Stack",
+      "status": "completed",
+      "id": 3
+    },
+    {
+      "subject": "Regular Excercise",
+      "status": "canceled",
+      "id": 4
+    }
+  ]
+}
